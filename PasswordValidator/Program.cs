@@ -78,7 +78,8 @@ static bool IsCountWithinRange(int charCount, int min, int max)
     return charCount >= min && charCount <= max;
 }
 
-//Basic exception handler to check length of line sub-parts. If true it will warn the user and shut down the process. 
+//Basic exception handler to check length of line sub-parts. If true it will warn the user and shut down the process.
+//Sorry for magic number 2 confusion. Yes, it is hardcode. Still ex handles putting in work. :)
 static void ExHandles(int actualLength, string message)
 {
     if (actualLength != 2)
